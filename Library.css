@@ -1,0 +1,66 @@
+
+.background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  
+  .main-title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 70px;
+ } 
+
+   .add {
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+
+ }  
+
+ .sub-titles {
+    text-decoration: underline;
+ }
+  
+  .table {
+    width: 50%;
+    color: #f8f8f2;
+    padding-top: 30px;
+    
+ }
+
+  .one {
+    font-size: 15px;
+    padding: 5px;
+ }
+
+ .new-book {
+    font-size: 20px;
+    align-items: center;
+    top:70px;
+    padding-bottom: 30px;
+ }
+
+ .second-title {
+    font-size: 25px;
+    text-decoration: underline;
+ }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Library.css">
+    <title>Library</title>
+</head>
+<body>
+    <main>
+      <img class="background"  img src="bookshelf.jpg">
+
+      <h1 class="main-title">Bookshelf</h1>
+
+      <div class="new-book">
+
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title" required>
+
+      <label for="author">Author:</label>
+      <input type="text" name="author" id="author" required>
+      
+      <label for="number">Page:</label>
+      <input type="number" name="pages"  id="pages" min="0">
+
+      <button class="add">Add a new book +</button>
+      </div>
+        <table>
+            <thead>
+              <tr class="sub-titles">
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td>TitleData</td>
+              <td>AuthorData</td>
+              <td>PagesData</td>
+              <td>ReadData</td>
+              <td><button class="one">Change read status</button></td>
+              <td><button class="one">Delete</button></td>
+            </tbody>
+          </table>
+        </div>
+       
+        </div>
+    </main>
+<script src="Library.js"></script>
+</body>
