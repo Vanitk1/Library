@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Library.css">
@@ -10,22 +11,38 @@
 
       <h1 class="main-title">Bookshelf</h1>
 
-      <div class="new-book">
-
+     <div class="new-book-data">
       <label for="title">Title:</label>
-      <input type="text" name="title" id="title" required>
+      <input type="text" name="title" id="title" placeholder="Title">
 
       <label for="author">Author:</label>
-      <input type="text" name="author" id="author" required>
+      <input type="text" name="author" id="author" placeholder="Author">
       
-      <label for="number">Page:</label>
-      <input type="number" name="pages"  id="pages" min="0">
+      <label for="number">Pages:</label>
+      <input type="number" name="pages"  id="pages" placeholder="Pages" min="0">
+
+      <fieldset role="radio">
+
+        <legend>Have you finished reading this book?</legend>
+
+        <label for="yes">
+          <input type="radio" id="yes" name="read" value="yes" checked>
+          <span>Yes</span>
+        </label>
+
+        <label for="no">
+          <input type="radio" id="no" name="read" value="no">
+          <span>No</span>
+        </label>
+      </fieldset>
 
       <button class="add">Add a new book +</button>
-      </div>
+     </div>
+
+      <div class="table">
         <table>
             <thead>
-              <tr class="sub-titles">
+              <tr class="headline">
                 <th>Title</th>
                 <th>Author</th>
                 <th>Pages</th>
@@ -37,13 +54,12 @@
               <td>AuthorData</td>
               <td>PagesData</td>
               <td>ReadData</td>
-              <td><button class="one">Change read status</button></td>
-              <td><button class="one">Delete</button></td>
+              <td class="data"><button>Change read status</button></td>
+              <td class="data"><button>Delete</button></td>
             </tbody>
           </table>
-        </div>
-       
         </div>
     </main>
 <script src="Library.js"></script>
 </body>
+</html>
